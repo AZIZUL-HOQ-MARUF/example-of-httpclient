@@ -15,7 +15,7 @@ export class HttpComponent implements OnInit {
   lastName: any;
 
   constructor(public apiService: ApiService,
-    public model: ModelService ) { }
+    public model: ModelService) { }
 
   ngOnInit() { }
   getData() {
@@ -25,7 +25,7 @@ export class HttpComponent implements OnInit {
       this.model.lastName = data['data']['last_name'];
     })
 
-    this.apiService.getLocalJsonData().subscribe(data=>{
+    this.apiService.getLocalJsonData().subscribe(data => {
       console.log(data['message']);
     })
   }
