@@ -7,5 +7,6 @@ export class ApiService {
   constructor(public http: HttpClient) { }
   public getUser() {
     return this.http.get(`${this.apiUrl}users/2`);
-  }
+  } 
+
 }

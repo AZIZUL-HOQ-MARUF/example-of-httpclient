@@ -23,6 +23,6 @@ export class HttpComponent implements OnInit {
       this.model.id = data['data']['id'];
       this.model.firstName = data['data']['first_name'];
       this.model.lastName = data['data']['last_name'];
-    })
+    }) 
   }
 }
