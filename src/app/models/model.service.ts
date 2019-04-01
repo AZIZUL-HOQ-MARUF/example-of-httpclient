@@ -10,6 +10,7 @@ export class ModelService {
   email: string;
   phone: string;
   city: string;
+  message: string;
 
   constructor() { }
 

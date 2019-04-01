@@ -13,6 +13,7 @@ export class HttpComponent implements OnInit {
   id: any;
   firstName: any;
   lastName: any;
+  
 
   constructor(public apiService: ApiService,
     public model: ModelService) { }
@@ -27,6 +28,9 @@ export class HttpComponent implements OnInit {
 
     this.apiService.getLocalJsonData().subscribe(data => {
       console.log(data['message']);
+      this.model.message = data['message'];
+
     })
+
   }
 }
