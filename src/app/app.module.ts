@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { ApiService } from './services/api.service';
 import { HttpComponent } from './components/http/http.component';
 import { ModelService } from './models/model.service';
+import { AppRouterModule } from 'src/router/router.module';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpClientModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule,AppRouterModule],
   declarations: [AppComponent, HttpComponent],
   bootstrap: [AppComponent],
   providers: [ApiService, ModelService]
