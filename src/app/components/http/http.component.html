@@ -1,9 +1,11 @@
 <div class="container-fluid">
+    <div class="mt-2">
+        <button (click)="getData()" class="btn-success">Get Data</button>
+        <hr>
+        <h1>First Name: {{model.firstName}}</h1>
+        <h1>Last Name: {{model.lastName}}</h1>
+        <h1>ID: {{model.id}}</h1>
 
-    <h1>First Name: {{model.firstName}}</h1>
-    <h1>Last Name: {{model.lastName}}</h1>
-    <h1>ID: {{model.id}}</h1>
-
-    <button (click)="getData()">Get Data</button>
-    <h2>Message : {{model.message}}</h2>
+        <h2>Message : {{model.message}}</h2>
+    </div>
 </div>
